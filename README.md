@@ -1,8 +1,8 @@
-# (TODO: your game's title)
+# Analogy Simulator 
 
-Author: (TODO: your name)
+Author: Xinyi Sun
 
-Design: (TODO: In two sentences or fewer, describe what is new and interesting about your game.)
+Design: This game elucidates a subtle analogy between balloon and...something else.
 
 Screen Shot:
 
@@ -10,9 +10,9 @@ Screen Shot:
 
 How To Play:
 
-(TODO: describe the controls and (if needed) goals/strategy.)
+Use WASD to control the movement of the balloon. Use mouse to adjust camera view (not necessarily helpful though). The floating balls are there to inflate the balloon so that it goes up higher. The goal is to reach the needle at the top of the balloon.
 
-Sources: (TODO: list a source URL for any assets you did not create yourself. Make sure you have a license for the asset.)
+Sources: As you've probably noticed my assets are named "shabby.\*". Not necessarily the best assets but I did create them myself.
 
 This game was built with [NEST](NEST.md).
 
