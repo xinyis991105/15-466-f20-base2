@@ -27,14 +27,22 @@ struct PlayMode : Mode {
 	//local copy of the game scene (so code can change it during gameplay):
 	Scene scene;
 
-	//hexapod leg to wobble:
-	Scene::Transform *hip = nullptr;
-	Scene::Transform *upper_leg = nullptr;
-	Scene::Transform *lower_leg = nullptr;
-	glm::quat hip_base_rotation;
-	glm::quat upper_leg_base_rotation;
-	glm::quat lower_leg_base_rotation;
-	float wobble = 0.0f;
+	Scene::Transform *cube = nullptr;
+	Scene::Transform *knot = nullptr;
+	std::vector<glm::vec3> collectibles;
+	glm::vec3 needle_pos;
+	int cur_collectible = 0;
+	glm::quat cube_base_rotation;
+	glm::quat knot_base_rotation;
+	glm::vec3 cube_base_position;
+	glm::vec3 knot_base_position;
+	glm::vec3 camera_base_position;
+	float swing = 0.0f;
+	float swollen_timer = 2.0f;
+	bool swollen = false;
+	bool balloon_blown_up = false;
+	bool reset = false;
+	int times_played = 1;
 	
 	//camera:
 	Scene::Camera *camera = nullptr;
